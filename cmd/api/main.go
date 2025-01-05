@@ -16,7 +16,6 @@ func main() {
 	app.config = cfg
 
 	mux := app.mount()
-	app.LoadEnv()
 
 	log.Fatal(app.run(mux))
 }
